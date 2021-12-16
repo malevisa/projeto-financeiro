@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+body{
+    background-color: #C4C4C4;
+}
+
+.login {
+    margin: 0 auto;
+    padding: 40px 40px 0 40px;
+    width: 400px;
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.linha {
+    height: 1px;
+    width: 75%;
+    background-color: black;
+}
+
+.form {
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.ipt-padrao {
+    padding: 5px;
+    width: 28.3vw;
+}
+
+.btn {
+    background-color: #00A3FF;
+    color: #FFF;
+    border-style: none;
+    width: 100%;
+    padding: 5px;
+    border: black solid 1px;
+}
+
+.cadastrar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgba(116, 177, 211, 0.5);
+    width: calc(100% + 10%);
+    padding: 5%;
+}
+
+.cadastrar button {
+    padding: 10px;
+    background-color: #F4F4F4;
+    color: #00A3FF;
+    border-style: none;
+    border: black 1px solid;
+    margin: 10px;
+}
