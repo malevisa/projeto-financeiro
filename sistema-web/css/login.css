@@ -7,6 +7,12 @@
 body{
     background-color: #C4C4C4;
 }
+.background{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh;
+}
 
 .login {
     margin: 0 auto;
