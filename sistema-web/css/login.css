@@ -50,6 +50,7 @@ body{
     padding: 5px;
     border: black solid 1px;
     font-size: 3vh;
+    cursor: pointer;
 }
 
 .cadastrar {
@@ -68,4 +69,5 @@ body{
     border-style: none;
     border: black 1px solid;
     margin: 10px;
+    cursor: pointer;
 }
