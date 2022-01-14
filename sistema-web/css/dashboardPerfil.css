@@ -178,7 +178,7 @@ body {
     pointer-events: auto;
 }
 
-.profile .profile_details img {
+.profile .profile_details .img-user {
     height: 45px;
     width: 45px;
     object-fit: cover;
@@ -227,16 +227,51 @@ body {
     width: calc(100% - 78px);
     left: 78px;
     transition: all 0.5s ease;
+    background: #F4F4F4;
 }
 
 .home_content .text {
-    font-size: 25px;
-    font-weight: 500;
-    color: #0E09ED;
-    margin: 12px;
+    margin: 1vw;
+}
+
+.home_content .text h2 {
+    margin: 0 6vw;
 }
 
 .sidebar.active ~ .home_content {
     width: calc(100% - 240px);
     left: 240px;
+}
+
+.box-perfil {
+    margin: 1vw;
+}
+
+.box-infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-info {
+    margin: 0 5vw;
+}
+
+.ipt-padrao {
+    padding: 5px;
+    width: 28.3vw;
+}
+
+.img-info img {
+    width: 40vw;
+}
+
+.btn-cadastro {
+    background-color: #00A3FF;
+    width: 10vw;
+    padding: 5px;
+    color: #fff;
+    border: black solid 1px;
+    font-size: 2.5vh;
+    cursor: pointer;
 }

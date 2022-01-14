@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dashboardPerfil.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxl-c-plus-plus'></i>
+                <div class="logo_name">MoneyControl</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="dashboardPerfil.html">
+                    <i class='bx bxs-user'></i>
+                    <span class="links_name">Usuário</span>
+                </a>
+                <span class="tooltip">Usuário</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-wallet'></i>
+                    <span class="links_name">Rendas</span>
+                </a>
+                <span class="tooltip">Rendas</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-trending-up'></i>
+                    <span class="links_name">Gráficos Rendas</span>
+                </a>
+                <span class="tooltip">Gráficos Rendas</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-dollar'></i>
+                    <span class="links_name">Despesas</span>
+                </a>
+                <span class="tooltip">Despesas</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-trending-down'></i>
+                    <span class="links_name">Gráficos Despesas</span>
+                </a>
+                <span class="tooltip">Gráficos Despesas</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img class="img-user" src="../img/imagem-do-usuario-com-fundo-preto.png" alt="">
+                    <div class="name_job">
+                        <div class="name">Matheus Lemos</div>
+                        <div class="job">Desenvolvedor</div>
+                    </div>
+                </div>
+                <a href="login.html"><i class='bx bx-log-out' id="log_out"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="home_content">
+        <div class="text">
+            <h2>Altere seus Dados</h2>
+            <div class="box-perfil">
+                <div class="box-infos">
+                    <div class="form-info">
+                        <form action="">
+                            <div>
+                                <label for="">Nome</label>
+                                <br>
+                                <input type="" class="ipt-padrao" placeholder="Matheus">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="">Sobrenome</label>
+                                <br>
+                                <input type="" class="ipt-padrao" placeholder="Lemos">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="">Cargo</label>
+                                <br>
+                                <input type="" class="ipt-padrao" placeholder="Pedreiro">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="">Email</label>
+                                <br>
+                                <input type="" class="ipt-padrao" placeholder="teste@teste.com">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="">Senha</label>
+                                <br>
+                                <input type="password" class="ipt-padrao" placeholder="********">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="">Repetir Senha</label>
+                                <br>
+                                <input type="password" class="ipt-padrao" placeholder="********">
+                            </div>
+                            <br>
+                            <div>
+                                <button class="btn-cadastro">Cadastrar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="img-info">
+                        <img src="../img/Login-rafiki.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+    let btn = document.querySelector("#btn");
+    let sidebar = document.querySelector(".sidebar");
+
+    btn.onclick = function () {
+        sidebar.classList.toggle("active");
+    }
+
+</script>
