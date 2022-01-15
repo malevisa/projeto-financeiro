@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
@@ -65,12 +65,46 @@
                         <div class="job">Desenvolvedor</div>
                     </div>
                 </div>
-                <a href="login.html"><i class='bx bx-log-out' id="log_out"></i></a>
+                <a href="index.html"><i class='bx bx-log-out' id="log_out"></i></a>
             </div>
         </div>
     </div>
     <div class="home_content">
-        <div class="text">Conteúdo da Dashboard</div>
+        <div class="text">
+            <h2>Cadastre a sua renda</h2>
+            <div class="box-renda">
+                <div class="form-renda">
+                    <form action="">
+                        <h2>Insira as suas rendas</h2>
+                        <div>
+                            <label for="">Tipo de Renda</label>
+                            <br>
+                            <select class="ipt-padrao" name="" id="">
+                                <option value="">Selecione...</option>
+                                <option value="">Vale Refeição</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="box-input">
+                            <div>
+                                <label for="">Valor</label>
+                                <br>
+                                <input type="" class="ipt-padrao2" placeholder="25,70">
+                            </div>
+                            <div>
+                                <label for="">Dia da renovação</label>
+                                <br>
+                                <input type="number" class="ipt-padrao2" placeholder="Matheus">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="box-button">
+                            <button class="btn-cadastro">Registrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
@@ -81,7 +115,7 @@
     let btn = document.querySelector("#btn");
     let sidebar = document.querySelector(".sidebar");
 
-    btn.onclick = function() {
+    btn.onclick = function () {
         sidebar.classList.toggle("active");
     }
 
