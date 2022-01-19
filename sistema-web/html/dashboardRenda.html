@@ -71,7 +71,47 @@
     </div>
     <div class="home_content">
         <div class="text">
-            <h2>Cadastre a sua renda</h2>
+            <div class="box-renda">
+                <div class="box-crud">
+                    <button id="btn-insert" class="btn-crud">Inserir renda</button>
+                    <button id="btn-update" class="btn-crud">Editar renda</button>
+                    <button id="btn-delete" class="btn-crud">Deletar renda</button>
+                </div>
+                <div class="tabela">
+                    <h2>Suas rendas</h2>
+                    <div class="box-table">
+                        <div class="content-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Renda</th>
+                                        <th>Renovação</th>
+                                        <th>Valor</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="feed_container">
+                                    <tr>
+                                        <td class="coluna">Vale alimentação</td>
+                                        <td class="coluna">30</td>
+                                        <td class="coluna">740,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="coluna">Vale transporte</td>
+                                        <td class="coluna">30</td>
+                                        <td class="coluna">350,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="coluna">Salário</td>
+                                        <td class="coluna">30</td>
+                                        <td class="coluna">1850,00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <h2>Cadastre a sua renda</h2>
             <div class="box-renda">
                 <div class="form-renda">
                     <form action="">
@@ -103,7 +143,41 @@
                         </div>
                     </form>
                 </div>
-            </div>
+            </div> -->
+        </div>
+    </div>
+
+    <div id="modal-insert" class="modal-container">
+        <div class="modal">
+            <button class="fechar">x</button>
+            <h2 class="titulo">Cadastre a sua renda</h2>
+            <form action="">
+                <div>
+                    <label for="">Tipo de Renda</label>
+                    <br>
+                    <select class="ipt-padrao" name="" id="">
+                        <option value="">Selecione...</option>
+                        <option value="">Vale Refeição</option>
+                    </select>
+                </div>
+                <br>
+                <div class="box-input">
+                    <div>
+                        <label for="">Valor</label>
+                        <br>
+                        <input type="" class="ipt-padrao2" placeholder="25,70">
+                    </div>
+                    <div>
+                        <label for="">Dia da renovação</label>
+                        <br>
+                        <input type="number" class="ipt-padrao2" placeholder="Matheus">
+                    </div>
+                </div>
+                <br>
+                <div class="box-button">
+                    <button class="btn-cadastro">Registrar</button>
+                </div>
+            </form>
         </div>
     </div>
 </body>
@@ -118,5 +192,18 @@
     btn.onclick = function () {
         sidebar.classList.toggle("active");
     }
+
+    function iniciaModal(modalId) {
+        const modal = document.getElementById(modalId);
+        modal.classList.add('mostrar');
+        modal.addEventListener('click', (e) => {
+            if (e.target.id == modalId || e.target.className == 'fechar') {
+                modal.classList.remove('mostrar');
+            }
+        });
+    }
+
+    const insert = document.getElementById('btn-insert');
+    insert.addEventListener('click', () => iniciaModal('modal-insert'));
 
 </script>
